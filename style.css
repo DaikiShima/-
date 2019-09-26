@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100%;
+}
+
+body{
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background: #c6e2f8;
+}
+
+#header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  line-height: 65px;
+  background: #0168b3;
+  color: white;
+  font-size: 160%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#talkField{
+  /*margin: 85px 0 60px 0;*/
+  padding: 47px 7px 0px 7px;
+  position: relative;
+}
+
+.timeLineContent{
+  padding: 0px;
+  margin: 0px;
+  background: white;
+  border: 2px solid #444444;
+  border-radius: 20px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.timeLineContent > p{
+  font-size: 20px;
+  margin: 20px;
+  color: #555555;
+}
+
+.time{
+  font-size: 10px;
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  color: #aaaaaa;
+  right: 10px;
+  bottom: 4px;
+}
+
+.speed{
+  visibility: hidden;
+}
+
+.logId{
+  visibility: hidden;
+}
+
+.color{
+  visibility: hidden;
+}
+
+.timeLineRailWay{
+  content: "";
+  height: 7px;
+  border: dashed 1px #dddddd;
+  position: relative;
+  margin: 0px 80px 0px 20px;
+  z-index: 20;
+  bottom: 14px;
+}
+
+.timeLineMargin{
+  height: 10px;
+}
+
+#inputField{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: #66b7ec;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+#inputMessage{
+  width: 100%;
+  height: 30px;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #13345f;
+  border: solid 6px #aaaaaa;
+  border-radius: 10px;
+  font-size: 20px;
+  transform: scale(0.8);
+}
+
+#send{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  -webkit-appearance: none;
+}
+
+#mainCanvas{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+}
+
+#bottom{
+  height: 20px;
+  margin: 0px 0px 30px 0px;
+}
